@@ -1,3 +1,20 @@
+header {
+  text-align: right;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 body {
-	background-color: #fafafa;
+  background-color: rgb(14, 14, 14);
+  color: rgb(240, 255, 255);
+}
+
+input[type="checkbox"]:checked ~ body {
+  color: red;
 }
