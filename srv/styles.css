@@ -28,6 +28,7 @@ body {
 	font-family: "Figtree", "Noto Sans", Tahoma, Verdana, sans-serif;
 	background-color: rgb(14, 14, 14);
 	color: rgb(240, 255, 255);
+	font-size: 17pt;
 	margin: 1em;
 }
 
@@ -36,6 +37,14 @@ body.dark {
 	color: rgb(14, 14, 14);
 }
 
+h1 {
+	color: rgb(255, 128, 0);
+	font-weight: 900;
+}
+
+h1.dark {
+	color: rgb(128, 0, 255);
+}
 input[type="checkbox"] {
 	display: none;
 }
