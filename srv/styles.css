@@ -1,5 +1,13 @@
 header {
+  position: relative;
   text-align: right;
+}
+
+header * {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
 }
 
 main {
@@ -13,4 +21,30 @@ main {
 body {
   background-color: rgb(14, 14, 14);
   color: rgb(240, 255, 255);
+  margin: 1em;
+}
+
+body.dark {
+	background-color: rgb(240, 255, 255);
+  color: rgb(14, 14, 14);
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+.sun {
+	opacity: 0;
+}
+
+.moon {
+	opacity: 1;
+}
+
+.sun.dark {
+	opacity: 1;
+}
+
+.moon.dark {
+	opacity: 0;
 }
