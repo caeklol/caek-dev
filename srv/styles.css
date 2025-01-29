@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Figtree';
+  src: URL('figtree.ttf') format('truetype');
+}
+
 header {
 	position: relative;
 	text-align: right;
@@ -16,9 +21,11 @@ main {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	line-height: 0px;
 }
 
 body {
+	font-family: "Figtree", "Noto Sans", Tahoma, Verdana, sans-serif;
 	background-color: rgb(14, 14, 14);
 	color: rgb(240, 255, 255);
 	margin: 1em;
