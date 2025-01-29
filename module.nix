@@ -12,6 +12,10 @@ in {
    services.caddy.virtualHosts."caek.dev" = {
 	extraConfig = ''
 		root * ${srv}
+		
+		file_server {
+			browse ${srv}
+		}
 	'';
    };
 }
