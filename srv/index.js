@@ -3,7 +3,6 @@ window.onload = () => {
 	const elements = document.querySelectorAll('*');
 
 	checkbox.addEventListener('change', () => {
-		console.log(elements);
 		if (checkbox.checked) {
 			elements.forEach(e => e.classList.add('dark'));
 		} else {
