@@ -9,4 +9,6 @@ window.onload = () => {
 			elements.forEach(e => e.classList.remove('dark'));
 		}
 	});
+
+	elements.forEach(e => e.classList.add('dark'));
 };
