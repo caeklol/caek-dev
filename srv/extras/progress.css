@@ -1,0 +1,30 @@
+:root {
+	--progress-active-dark: rgb(159, 134, 213);
+	--progress-bg-dark: rgb(44, 37, 50);
+
+	--progress-active: rgb(127,88,210);
+	--progress-bg: rgb(165, 161, 168);
+}
+
+progress {
+	width: 10em;
+	border: none;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--pbg);
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--pbg);
+  border-radius: 2px;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--pa);
+  border-radius: 2px;
+}
+
+progress::-moz-progress-bar {
+  background-color: var(--pa);
+  border-radius: 2px;
+}

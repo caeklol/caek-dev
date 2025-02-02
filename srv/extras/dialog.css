@@ -1,0 +1,14 @@
+dialog {
+	background-color: rgb(245, 245, 255);
+	color: rgb(14, 14, 14);
+	border: none;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+dialog.dark {
+	background-color: rgb(24, 24, 38);
+	color: rgb(240, 255, 255);
+}

@@ -3,38 +3,16 @@
   src: URL('figtree.ttf') format('truetype');
 }
 
-header {
-	position: relative;
-	text-align: right;
-}
-
-header * {
-	position: absolute;
-	right: 0;
-	top: 0;
-	margin: 0;
-}
-
-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	line-height: 0px;
-}
-
 body {
 	font-family: "Figtree", "Noto Sans", Tahoma, Verdana, sans-serif;
-	background-color: rgb(240, 255, 255);
+	background-color: rgb(245, 245, 255);
 	color: rgb(14, 14, 14);
-	font-weight: 900;
-	font-size: 30pt;
+	line-height: 0px;
 	margin: 1em;
 }
 
 body.dark {
-	background-color: rgb(14, 14, 14);
+	background-color: rgb(14, 14, 18);
 	color: rgb(240, 255, 255);
 }
 
@@ -43,17 +21,96 @@ input[type="checkbox"] {
 }
 
 .sun {
-	opacity: 1;
+	display:block;
 }
 
 .moon {
-	opacity: 0;
+	display: none;
 }
 
 .sun.dark {
-	opacity: 0;
+	display:none;
 }
 
 .moon.dark {
-	opacity: 1;
+	display:block;
+}
+
+main {
+	height: 100vh;
+}
+
+h1 {
+	font-size: 25pt;
+	font-weight: 900;
+}
+
+h3 {
+	font-size: 20pt;
+	font-weight: 900;
+}
+
+p {
+	font-size: 12pt;
+	font-weight: 500;
+}
+
+a {
+	color: rgb(0, 102, 204);
+	text-decoration: none;
+}
+
+a.dark {
+	color: rgb(51, 150, 255);
+}
+
+button {
+	border: none;
+	padding: 8px;
+	border-radius: 2px;
+	background-color: rgb(204, 208, 218);
+	color: rgb(0, 0, 0)
+}
+
+button.dark {
+	background-color: rgb(37, 37, 50);
+	color: rgb(255, 240, 255);
+}
+
+.flex {
+	display: flex;
+	gap: 4px;
+}
+
+.flex-row {
+	flex-direction: row;
+	justify-content: center;
+}
+.flex-col {
+	flex-direction: column;
+	align-items: center;
+}
+
+.pad-bottom {
+	margin-bottom: 1.3em;	
+}
+
+.flex-space {
+	justify-content: space-between;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.pad {
+	padding: 8px;
+}
+
+.back {
+	color: rgb(14, 14, 14);
+}
+
+.back.dark {
+	color: rgb(240, 240, 240);
 }
