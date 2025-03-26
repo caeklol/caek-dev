@@ -14,5 +14,10 @@ in {
       root * ${srv}
       file_server
     '';
+
+    "files.caek.dev".extraConfig = ''
+      root * /srv
+      file_server
+    '';
   };
 }
