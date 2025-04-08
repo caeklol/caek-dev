@@ -16,7 +16,7 @@ in {
     '';
 
     "files.caek.dev".extraConfig = ''
-      root * /srv
+      root * /data/srv
       file_server
     '';
   };
